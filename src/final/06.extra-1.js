@@ -126,7 +126,7 @@ function Cell({row, column}) {
 Cell = React.memo(Cell)
 
 function DogNameInput() {
-  const [state, dispatch] = useDogState()
+  const [state, dispatch] = useDogState('DofgNameInput')
   const {dogName} = state
 
   function handleChange(event) {
